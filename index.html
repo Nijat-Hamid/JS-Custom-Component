@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>JS Custom Components</title>
+</head>
+<body>
+    <h1 class="page-title" >JS Custom Components</h1>
+    <div class="custom-accordion-element">
+        <h2 class="component-title">Custom Accordion</h2>
+        <div id="custom-accordion" class="custom-accordion">
+            <div class="accordion-item">
+                <div class="accordion-content">
+                    <h2 class="accordion-header">
+                        <button class="accordionBtn">
+                        <span>Accordion Item 1</span>
+                        <i class="fa-solid fa-lock"></i>
+                        </button>
+                    </h2>
+                    <div class="accordion-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid porro id, vitae ipsum alias quisquam tempora provident. Non doloremque perspiciatis, dignissimos eum beatae necessitatibus placeat. Optio reiciendis at perferendis odio aut, labore eum repellat non quaerat suscipit. Pariatur quas itaque natus nostrum molestias dolorem magnam, ex tempore facilis nihil?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-content">
+                    <h2 class="accordion-header">
+                        <button class="accordionBtn">
+                        <span>Accordion Item 2</span>
+                        <i class="fa-solid fa-lock"></i>
+                        </button>
+                    </h2>
+                    <div class="accordion-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid porro id, vitae ipsum alias quisquam tempora provident. Non doloremque perspiciatis, dignissimos eum beatae necessitatibus placeat. Optio reiciendis at perferendis odio aut, labore eum repellat non quaerat suscipit. Pariatur quas itaque natus nostrum molestias dolorem magnam, ex tempore facilis nihil?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-content">
+                    <h2 class="accordion-header">
+                        <button class="accordionBtn">
+                        <span>Accordion Item 3</span>
+                        <i class="fa-solid fa-lock"></i>
+                        </button>
+                    </h2>
+                    <div class="accordion-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquid porro id, vitae ipsum alias quisquam tempora provident. Non doloremque perspiciatis, dignissimos eum beatae necessitatibus placeat. Optio reiciendis at perferendis odio aut, labore eum repellat non quaerat suscipit. Pariatur quas itaque natus nostrum molestias dolorem magnam, ex tempore facilis nihil?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom-slider-element">
+        <h2 class="component-title">Custom Slider via Fade Effect</h2>
+        <div class="custom-slider">
+            <div class="custom-slider-content">
+                <div class="slider-item item-one">
+                    <img src="./assets/img/img1.jpg" alt="">
+                </div>
+                <div class="slider-item item-two">
+                    <img src="./assets/img/img2.jpg" alt="">
+                </div>
+                <div class="slider-item item-three">
+                    <img src="./assets/img/img3.jpg" alt="">
+                </div>
+                <div class="slider-item item-four">
+                    <img src="./assets/img/img4.jpg" alt="">
+                </div>
+            </div>
+            <div class="custom-slider-component">
+                <div class="indicator-buttons">
+                    <button class="indicator-btn" type="button"></button>
+                    <button class="indicator-btn" type="button"></button>
+                    <button class="indicator-btn" type="button"></button>
+                    <button class="indicator-btn" type="button"></button>
+                </div>
+                <div class="custom-slider-buttons">
+                    <button class="prev-btn" onclick="sliderCont(-1)" type="button">
+                        <i class="fa-solid fa-circle-left"></i>
+                    </button>
+                    <button class="next-btn" onclick="sliderCont(1)" type="button">
+                        <i class="fa-solid fa-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom-calculator-element">
+        <h2 class="component-title">Custom Calculator</h2>
+        <h3 class="component-subtitle">(World's Most Advanced Calc Machine :))) )</h3>
+            <div class="calculator">
+               <div class="main-input">
+                <input placeholder="Value 1" onfocus="inputTyper(a)" class="calcinput-1" id="input1" type="number" name="" id="">
+                <input placeholder="Value 2" onfocus="inputTyper(b)" class="calcinput-2" id="input2" type="number" name="" id="">
+                <span class="result-name">=</span>
+                <span class="result">?</span>
+               </div>
+               <hr>
+                <div class="calc-buttons">
+                <div class="numeric-btn">
+                <button class="numbers" type="button">9</button>
+                <button class="numbers"  type="button">8</button>
+                <button class="numbers" type="button">7</button>
+                <button class="numbers" type="button">6</button>
+                <button class="numbers" type="button">5</button>
+                <button class="numbers" type="button">4</button>
+                <button class="numbers" type="button">3</button>
+                <button class="numbers" type="button">2</button>
+                <button class="numbers" type="button">1</button>
+                <button class="numbers" type="button">0</button>
+                <button class="numbers" type="button">.</button>
+                </div>
+                <div class="operation-btn">
+                    <button class="operation" type="button" >+</button>
+                    <button class="operation" type="button" >-</button>
+                    <button class="operation"  type="button" >*</button>
+                    <button class="operation" type="button" >/</button>
+                    <button class="operation" type="button" >%</button>
+                    <button class="operation" type="button" >x<sup>2</sup></button>
+                    <button class="operation" type="button" >C</button>
+                </div>
+                </div>
+            </div>
+    </div>
+    <script src="assets/js/bundle.js"></script>
+</body>
+</html>
